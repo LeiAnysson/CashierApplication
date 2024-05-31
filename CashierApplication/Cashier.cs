@@ -9,9 +9,9 @@ namespace UserAccountNamespace
     internal class Cashier : UserAccount
     {
         private string department;
-        public Cashier(string name, string uName, string password) : base (name, uName, password)
+        public Cashier(string name, string department, string uName, string password) : base (name, uName, password)
         {
-            this.department = "Finance";
+            this.department = department;
         }
         public override bool validateLogin(string uName, string password)
         {

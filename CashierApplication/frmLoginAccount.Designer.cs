@@ -99,6 +99,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmLoginAccount";
             this.Text = "frmLoginAccount";
+            this.Load += new System.EventHandler(this.frmLoginAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

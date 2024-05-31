@@ -23,12 +23,13 @@ namespace CashierApplication
             string name = "Clarisa Castro";
             string un = "cashier101";
             string pw = "cashier12345";
+            string fi = "Finance";
 
             string username = textBox1.Text;
             string password = textBox2.Text;
 
 
-            Cashier c = new Cashier(name, un, pw);
+            Cashier c = new Cashier(name, fi, un, pw);
             bool verify = c.validateLogin(username, password);
 
             if (verify == true)
@@ -41,6 +42,11 @@ namespace CashierApplication
             {
                 MessageBox.Show("incorrect username or password.");
             }
+        }
+
+        private void frmLoginAccount_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
