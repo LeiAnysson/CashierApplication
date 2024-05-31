@@ -52,6 +52,17 @@ namespace CashierApplication
             
         }
 
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmLoginAccount().Show();
+            this.Hide();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             itemName = textBox1.Text;
